@@ -202,8 +202,26 @@ footer .footer__div, .redesContainer .footer__div {
 .grilla {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 85px 200px 300px 300px 85px 200px 300px 300px 85px 200px 300px 300px 85px 200px 300px 300px;
-  grid-template-areas: "titulo1 titulo1" "texto1 texto1" "foto1 foto2" "foto3 foto4" "titulo2 titulo2" "texto2 texto2" "foto5 foto6" "foto7 foto8" "titulo3 titulo3" "texto3 texto3" "foto9 foto10" "foto11 foto12" "titulo4 titulo4" "texto4 texto4" "foto13 foto14" "foto15 foto16";
+  grid-template-rows: 85px 200px 300px 300px
+ 85px 200px 300px 300px
+ 85px 200px 300px 300px
+ 85px 200px 300px 300px;
+  grid-template-areas: "titulo1 titulo1"
+ "texto1 texto1"
+ "foto1 foto2"
+ "foto3 foto4"
+ "titulo2 titulo2"
+ "texto2 texto2"
+ "foto5 foto6"
+ "foto7 foto8"
+ "titulo3 titulo3"
+ "texto3 texto3"
+ "foto9 foto10"
+ "foto11 foto12"
+ "titulo4 titulo4"
+ "texto4 texto4"
+ "foto13 foto14"
+ "foto15 foto16";
   grid-column-gap: 15px;
   grid-row-gap: 65px;
   justify-items: center; }
@@ -341,8 +359,21 @@ img:hover {
     display: grid;
     margin: auto;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 60px 325px 1px 407px 1px 29px 304px 1px 370px;
-    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
+    grid-template-rows: 32px 70px 60px
+ 325px 1px 407px
+ 1px 29px 304px
+ 1px 370px;
+    grid-template-areas: "titulo1"
+ "nav"
+ "subtitulo1"
+ "video"
+ "linea1"
+ "texto"
+ "linea2"
+ "subtitulo2"
+ "tabla"
+ "linea3"
+ "footer";
     grid-row-gap: 25px; }
   h1 {
     grid-area: titulo1;
@@ -380,8 +411,21 @@ img:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 29px 325px 1px 407px 1px 29px 304px 1px 196px;
-    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
+    grid-template-rows: 32px 70px 29px
+ 325px 1px 407px
+ 1px 29px 304px
+ 1px 196px;
+    grid-template-areas: "titulo1"
+ "nav"
+ "subtitulo1"
+ "video"
+ "linea1"
+ "texto"
+ "linea2"
+ "subtitulo2"
+ "tabla"
+ "linea3"
+ "footer";
     grid-row-gap: 13px; }
   h1 {
     grid-area: titulo1; }
@@ -411,7 +455,4 @@ img:hover {
     width: 1500px;
     margin: auto; } }
 
-@media only screen and (min-width: 1500px) {
-  .mobileFirst {
-    width: 1650px;
-    margin: auto; } }
+
