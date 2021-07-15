@@ -1,0 +1,417 @@
+h1 {
+  font-weight: 700;
+  font-size: 70px;
+  font-weight: 800;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center; }
+
+nav {
+  display: flex; }
+
+.nav__lista {
+  list-style: none;
+  padding: 0;
+  background: #092327;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.nav__lista li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  display: flex; }
+
+.nav__lista li {
+  display: inline-block;
+  display: flex; }
+
+.nav__lista li a:hover {
+  background: #009246;
+  transition: 1s; }
+
+.videoItalia {
+  height: 50px;
+  width: 50px; }
+
+.videoIframe {
+  align-content: center;
+  margin: auto;
+  margin-bottom: 50px; }
+
+.table {
+  padding: 30px;
+  background-image: linear-gradient(to right, #009246, #FFFFFF, #CE2B37);
+  color: black;
+  font-size: 20px;
+  justify-content: center;
+  margin: auto; }
+
+th {
+  color: black; }
+
+tr {
+  color: black;
+  padding: 7px; }
+  tr td {
+    color: black;
+    padding: 7px; }
+
+.formulario__div {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px; }
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none; }
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none; }
+
+select {
+  background: #31384a;
+  color: #fff;
+  padding: 10px; }
+
+textarea {
+  height: 200px;
+  width: 100%; }
+
+button {
+  background: #31384a;
+  color: #fff;
+  padding: 15px; }
+
+button:hover {
+  cursor: pointer; }
+
+.body_div {
+  background-image: url("../fotos/cinqueterre1.jpg");
+  background-repeat: no-repeat; }
+
+.tituloContacto {
+  color: white; }
+
+.tituloQuienes {
+  color: wheat; }
+
+.body__titulo {
+  color: white;
+  font-family: Comic; }
+
+.body__texto {
+  color: #f0e0e0;
+  font-family: verdana; }
+
+.formulario__body {
+  background-image: url(../fotos/florencia1.jpg);
+  background-repeat: no-repeat; }
+
+p {
+  font-size: 25px;
+  word-spacing: 3px; }
+
+.formulario__text {
+  color: white; }
+
+footer, .redesContainer {
+  background: #092327;
+  width: 100%;
+  justify-content: center; }
+
+footer .footer__div, .redesContainer .footer__div {
+  background: #092327;
+  color: white;
+  width: 100%;
+  justify-content: center; }
+
+.footer__titulo {
+  color: white;
+  width: 100%;
+  justify-content: center; }
+
+.footer__texto {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  justify-content: center; }
+
+.redesContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+
+.redesContainer ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50 px;
+  text-align: center; }
+
+.redesContainer ul li a {
+  display: block;
+  padding: 0 10px;
+  background-color: #092327;
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px black;
+  transition: .2s; }
+
+.redesContainer ul li a:hover {
+  transform: translate(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px black; }
+
+.redesContainer ul li .facebook:hover {
+  background-color: #3b5999; }
+
+.redesContainer ul li .twitter:hover {
+  background-color: #55acee; }
+
+.redesContainer ul li .instagram:hover {
+  background-color: #e4405f; }
+
+.redesContainer ul li .pinterest:hover {
+  background-color: #bd081c; }
+
+.redesContainer ul li .linkedin:hover {
+  background-color: #0077b5; }
+
+/*Grids Viaje1 y Viaje2*/
+.grilla {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 85px 200px 300px 300px 85px 200px 300px 300px 85px 200px 300px 300px 85px 200px 300px 300px;
+  grid-template-areas: "titulo1 titulo1" "texto1 texto1" "foto1 foto2" "foto3 foto4" "titulo2 titulo2" "texto2 texto2" "foto5 foto6" "foto7 foto8" "titulo3 titulo3" "texto3 texto3" "foto9 foto10" "foto11 foto12" "titulo4 titulo4" "texto4 texto4" "foto13 foto14" "foto15 foto16";
+  grid-column-gap: 15px;
+  grid-row-gap: 65px;
+  justify-items: center; }
+
+.tituloUno {
+  grid-area: titulo1;
+  height: 85px; }
+
+.tituloDos {
+  grid-area: titulo2;
+  height: 85px; }
+
+.tituloTres {
+  grid-area: titulo3;
+  height: 85px; }
+
+.tituloCuatro {
+  grid-area: titulo4;
+  height: 85px; }
+
+.textoUno {
+  grid-area: texto1;
+  object-fit: cover; }
+
+.textoDos {
+  grid-area: texto2;
+  object-fit: cover; }
+
+.textoTres {
+  grid-area: texto3;
+  object-fit: cover; }
+
+.textoCuatro {
+  grid-area: texto4;
+  object-fit: cover; }
+
+.fotoUno {
+  grid-area: foto1;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoDos {
+  grid-area: foto2;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoTres {
+  grid-area: foto3;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoCuatro {
+  grid-area: foto4;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoCinco {
+  grid-area: foto5;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoSeis {
+  grid-area: foto6;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoSiete {
+  grid-area: foto7;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoOcho {
+  grid-area: foto8;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoNueve {
+  grid-area: foto9;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoDiez {
+  grid-area: foto10;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoOnce {
+  grid-area: foto11;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoDoce {
+  grid-area: foto12;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoTrece {
+  grid-area: foto13;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoCatorce {
+  grid-area: foto14;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoQuince {
+  grid-area: foto15;
+  object-fit: cover;
+  height: 300px; }
+
+.fotoDieciseis {
+  grid-area: foto16;
+  object-fit: cover;
+  height: 300px; }
+
+.videoIframe {
+  width: 500px;
+  height: 325px;
+  justify-content: center;
+  margin: auto; }
+
+.videoItalia {
+  width: 400px;
+  height: 350px;
+  margin: auto; }
+
+img:hover {
+  transform: scale(1.4);
+  transition: 0.5s ease all;
+  cursor: pointer; }
+
+@media only screen and (max-width: 600px) {
+  .mobileFirst {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 32px 70px 60px 325px 1px 407px 1px 29px 304px 1px 370px;
+    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
+    grid-row-gap: 25px; }
+  h1 {
+    grid-area: titulo1;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .lista {
+    grid-area: nav; }
+  .tituloVideo {
+    grid-area: subtitulo1; }
+  .videoItalia {
+    grid-area: video; }
+  .videoIframe {
+    width: 405px; }
+  .lineaUno {
+    grid-area: linea1; }
+  .textoViaje {
+    grid-area: texto;
+    margin: auto;
+    font-size: 23px; }
+  .lineaDos {
+    grid-area: linea2; }
+  .tituloTabla {
+    grid-area: subtitulo2; }
+  .table {
+    grid-area: tabla;
+    font-size: 17px;
+    padding: 0px; }
+  .lineaTres {
+    grid-area: linea3; }
+  .footerPrincipal {
+    grid-area: footer; } }
+
+@media only screen and (min-width: 768) {
+  .mobileFirst {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 32px 70px 29px 325px 1px 407px 1px 29px 304px 1px 196px;
+    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
+    grid-row-gap: 13px; }
+  h1 {
+    grid-area: titulo1; }
+  .lista {
+    grid-area: nav; }
+  .tituloVideo {
+    grid-area: subtitulo1; }
+  .videoItalia {
+    grid-area: video; }
+  .lineaUno {
+    grid-area: linea1; }
+  .textoViaje {
+    grid-area: texto; }
+  .lineaDos {
+    grid-area: linea2; }
+  .tituloTabla {
+    grid-area: subtitulo2; }
+  .tabla {
+    grid-area: tabla; }
+  .lineaTres {
+    grid-area: linea3; }
+  .footerPrincipal {
+    grid-area: footer; } }
+
+@media only screen and (min-width: 1280px) {
+  .mobileFirst {
+    width: 1500px;
+    margin: auto; } }
+
+@media only screen and (min-width: 1500px) {
+  .mobileFirst {
+    width: 1650px;
+    margin: auto; } }
