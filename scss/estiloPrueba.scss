@@ -137,7 +137,7 @@ button:hover {
 
 
 .body_div{
-    background-image: url("../fotos/cinqueterre1.jpg");
+    background-image: url("../fotos/florencia1.jpg");
     background-repeat: no-repeat;
 }
 
@@ -159,11 +159,13 @@ button:hover {
 }
 
 .body__texto{
-    @include diseñoQuienes(rgb(240, 224, 224), verdana)
+    @include diseñoQuienes(rgb(240, 224, 224), verdana);
+    font-weight: 4.2;
+    line-height: 1.2;
 }
 
 .formulario__body{
-    background-image: url(../fotos/florencia1.jpg);
+    background-image: url(../fotos/cinqueterre1.jpg);
     background-repeat: no-repeat;
 }
 
@@ -474,8 +476,8 @@ height: 85px;
 }
 
 img:hover{
-    transform: scale(1.4);
-    transition: 0.5s ease all;
+    transform: scale(1.2);
+    transition: 1.0s ease all;
     cursor: pointer;
 }
  
@@ -550,7 +552,7 @@ img:hover{
     
 }
 
-@media only screen and (min-width:768){
+@media only screen and (min-width:768px){
     .mobileFirst{
         margin: auto;
         display: grid;
@@ -611,9 +613,613 @@ img:hover{
 
 @media only screen and (min-width: 1280px) {
 	.mobileFirst {
-		width: 1500px;
-		margin: auto;
+		.mobileFirst{
+            margin: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 32px 70px 29px
+                                325px 1px 407px
+                                1px 29px 304px
+                                1px 196px;
+    
+            grid-template-areas: "titulo1"
+                                  "nav"
+                                  "subtitulo1"
+                                  "video"
+                                  "linea1"
+                                  "texto"
+                                  "linea2"
+                                  "subtitulo2"
+                                  "tabla"
+                                  "linea3"
+                                  "footer";
+         grid-row-gap: 13px;
+        }
+        h1{
+            grid-area: titulo1;
+        }
+        .lista{
+            grid-area: nav;
+        }
+        .tituloVideo{
+            grid-area: subtitulo1;
+        }
+        .videoItalia{
+            grid-area: video;
+        }
+        .lineaUno{
+            grid-area: linea1;
+        }
+        .textoViaje{
+            grid-area: texto;
+        }
+        .lineaDos{
+            grid-area: linea2;
+        }
+        .tituloTabla{
+            grid-area: subtitulo2;
+        }
+        .tabla{
+            grid-area: tabla;
+        }
+        .lineaTres{
+            grid-area: linea3;
+        }
+        .footerPrincipal{
+            grid-area: footer;
+        }
+    }
 	}
+
+    // responsive viaje 1 y 2
+
+@media only screen and (max-width: 600px) {
+    .grilla{
+        display: grid;
+        margin: auto;
+        grid-template-columns: 100%;
+        grid-template-rows:  85px 475px
+                            200px 200px 200px 200px
+                            85px 475px 200px 200px
+                            200px 200px 85px 475px
+                            200px 200px 200px 200px
+                            87px 475px 200px 200px
+                            200px 200px ;
+
+        grid-template-areas: "titulo1"
+                              "texto1"
+                              "foto1"
+                              "foto2"
+                              "foto3"
+                              "foto4"
+                              "titulo2"
+                              "texto2"
+                              "foto5"
+                              "foto6"
+                              "foto7"
+                              "foto8"
+                              "titulo3"
+                              "texto3"
+                              "foto9"
+                              "foto10"
+                              "foto11"
+                              "foto12"
+                              "titulo4"
+                              "texto4"
+                              "foto13"
+                              "foto14"
+                              "foto15"
+                              "foto16"
+                              ;
+
+        grid-row-gap: 25px;
+    }
+    .tituloUno{
+        grid-area: titulo1;
+        height: 85px;
+        }
+        .tituloDos{
+        grid-area: titulo2;
+        height: 85px;
+        }
+        .tituloTres{
+        grid-area: titulo3;
+        height: 85px;
+        }
+        .tituloCuatro{
+        grid-area: titulo4;
+        height: 85px;
+        }
+        .textoUno{
+            grid-area: texto1;
+            object-fit: cover;
+            font-size: 22px;
+        }
+        .textoDos{
+            grid-area: texto2;
+            object-fit: cover;
+            font-size: 22px;
+        }
+        .textoTres{
+            grid-area: texto3;
+            object-fit: cover;
+            font-size: 22px;
+        }
+        .textoCuatro{
+            grid-area: texto4;
+            object-fit: cover;
+            font-size: 22px;
+        }
+        .fotoUno{
+            grid-area: foto1;
+            object-fit: cover;
+            padding: 20px;
+            height: 200px;
+        }
+        .fotoDos{
+            grid-area: foto2;
+            object-fit: cover;
+            padding: 20px;
+            height: 200px;
+        }
+        .fotoTres{
+            grid-area: foto3;
+            object-fit: cover;
+            padding: 20px;
+            height: 200px;
+        }
+        .fotoCuatro{
+            grid-area: foto4;
+            object-fit: cover;
+            padding: 20px;
+            height: 200px;
+        }
+        .fotoCinco{
+            grid-area: foto5;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoSeis{
+            grid-area: foto6;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoSiete{
+            grid-area: foto7;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoOcho{
+            grid-area: foto8;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoNueve{
+            grid-area: foto9;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoDiez{
+            grid-area: foto10;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoOnce{
+            grid-area: foto11,;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoDoce{
+            grid-area: foto12;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoTrece{
+            grid-area: foto13;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoCatorce{
+            grid-area: foto14;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoQuince{
+            grid-area: foto15;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+        .fotoDieciseis{
+            grid-area: foto16;
+            object-fit: cover;
+            height: 200px;
+            padding: 20px;
+        }
+
+        .footer__div{
+            grid-area: footer;
+        }
+
+    img:hover{
+        transform: none;
+    }
 }
 
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .grilla{
+        display: grid;
+        margin: auto;
+        grid-template-columns: 100%;
+        grid-template-rows:  85px 475px
+                            250px 250px 250px 250px
+                            85px 475px 250px 250px
+                            250px 250px 85px 475px
+                            250px 250px 250px 250px
+                            87px 475px 250px 250px
+                            250px 250px ;
+
+        grid-template-areas: "titulo1"
+                              "texto1"
+                              "foto1"
+                              "foto2"
+                              "foto3"
+                              "foto4"
+                              "titulo2"
+                              "texto2"
+                              "foto5"
+                              "foto6"
+                              "foto7"
+                              "foto8"
+                              "titulo3"
+                              "texto3"
+                              "foto9"
+                              "foto10"
+                              "foto11"
+                              "foto12"
+                              "titulo4"
+                              "texto4"
+                              "foto13"
+                              "foto14"
+                              "foto15"
+                              "foto16"
+                              ;
+
+        grid-row-gap: 30px;
+    }
+    .tituloUno{
+        grid-area: titulo1;
+        height: 85px;
+        }
+        .tituloDos{
+        grid-area: titulo2;
+        height: 85px;
+        }
+        .tituloTres{
+        grid-area: titulo3;
+        height: 85px;
+        }
+        .tituloCuatro{
+        grid-area: titulo4;
+        height: 85px;
+        }
+        .textoUno{
+            grid-area: texto1;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .textoDos{
+            grid-area: texto2;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .textoTres{
+            grid-area: texto3;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .textoCuatro{
+            grid-area: texto4;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .fotoUno{
+            grid-area: foto1;
+            object-fit: cover;
+            padding: 25px;
+            height: 250px;
+        }
+        .fotoDos{
+            grid-area: foto2;
+            object-fit: cover;
+            padding: 25px;
+            height: 250px;
+        }
+        .fotoTres{
+            grid-area: foto3;
+            object-fit: cover;
+            padding: 25px;
+            height: 250px;
+        }
+        .fotoCuatro{
+            grid-area: foto4;
+            object-fit: cover;
+            padding: 25px;
+            height: 250px;
+        }
+        .fotoCinco{
+            grid-area: foto5;
+            object-fit: cover;
+            height: 250px;
+            padding: 25px;
+        }
+        .fotoSeis{
+            grid-area: foto6;
+            object-fit: cover;
+            height: 250px;
+            padding: 25px;
+        }
+        .fotoSiete{
+            grid-area: foto7;
+            object-fit: cover;
+            height: 250px;
+            padding: 25px;
+        }
+        .fotoOcho{
+            grid-area: foto8;
+            object-fit: cover;
+            height: 250px;
+            padding: 25px;
+        }
+        .fotoNueve{
+            grid-area: foto9;
+            object-fit: cover;
+            height: 250px;
+            padding: 25px;
+        }
+        .fotoDiez{
+            grid-area: foto10;
+            object-fit: cover;
+            height: 250px;
+            padding: 25px;
+        }
+        .fotoOnce{
+            grid-area: foto11,;
+            object-fit: cover;
+            height: 250px;
+            padding: 25px;
+        }
+        .fotoDoce{
+            grid-area: foto12;
+            object-fit: cover;
+            height: 250px;
+            padding: 20px;
+        }
+        .fotoTrece{
+            grid-area: foto13;
+            object-fit: cover;
+            height: 250px;
+            padding: 20px;
+        }
+        .fotoCatorce{
+            grid-area: foto14;
+            object-fit: cover;
+            height: 250px;
+            padding: 20px;
+        }
+        .fotoQuince{
+            grid-area: foto15;
+            object-fit: cover;
+            height: 250px;
+            padding: 20px;
+        }
+        .fotoDieciseis{
+            grid-area: foto16;
+            object-fit: cover;
+            height: 250px;
+            padding: 20px;
+        }
+
+        .footer__div{
+            grid-area: footer;
+        }
+
+    img:hover{
+        transform: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .grilla{
+        display: grid;
+        margin: auto;
+        grid-template-columns: 100%;
+        grid-template-rows:  85px 475px
+                            300px 300px 300px 300px
+                            85px 475px 300px 300px
+                            300px 300px 85px 475px
+                            300px 300px 300px 300px
+                            87px 475px 300px 300px
+                            300px 300px ;
+
+        grid-template-areas: "titulo1"
+                              "texto1"
+                              "foto1"
+                              "foto2"
+                              "foto3"
+                              "foto4"
+                              "titulo2"
+                              "texto2"
+                              "foto5"
+                              "foto6"
+                              "foto7"
+                              "foto8"
+                              "titulo3"
+                              "texto3"
+                              "foto9"
+                              "foto10"
+                              "foto11"
+                              "foto12"
+                              "titulo4"
+                              "texto4"
+                              "foto13"
+                              "foto14"
+                              "foto15"
+                              "foto16"
+                              ;
+
+        grid-row-gap: 25px;
+    }
+    .tituloUno{
+        grid-area: titulo1;
+        height: 85px;
+        }
+        .tituloDos{
+        grid-area: titulo2;
+        height: 85px;
+        }
+        .tituloTres{
+        grid-area: titulo3;
+        height: 85px;
+        }
+        .tituloCuatro{
+        grid-area: titulo4;
+        height: 85px;
+        }
+        .textoUno{
+            grid-area: texto1;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .textoDos{
+            grid-area: texto2;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .textoTres{
+            grid-area: texto3;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .textoCuatro{
+            grid-area: texto4;
+            object-fit: cover;
+            font-size: 25px;
+        }
+        .fotoUno{
+            grid-area: foto1;
+            object-fit: cover;
+            padding: 30px;
+            height: 300px;
+        }
+        .fotoDos{
+            grid-area: foto2;
+            object-fit: cover;
+            padding: 30px;
+            height: 300px;
+        }
+        .fotoTres{
+            grid-area: foto3;
+            object-fit: cover;
+            padding: 30px;
+            height: 300px;
+        }
+        .fotoCuatro{
+            grid-area: foto4;
+            object-fit: cover;
+            padding: 30px;
+            height: 300px;
+        }
+        .fotoCinco{
+            grid-area: foto5;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoSeis{
+            grid-area: foto6;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoSiete{
+            grid-area: foto7;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoOcho{
+            grid-area: foto8;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoNueve{
+            grid-area: foto9;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoDiez{
+            grid-area: foto10;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoOnce{
+            grid-area: foto11,;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoDoce{
+            grid-area: foto12;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoTrece{
+            grid-area: foto13;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoCatorce{
+            grid-area: foto14;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoQuince{
+            grid-area: foto15;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+        .fotoDieciseis{
+            grid-area: foto16;
+            object-fit: cover;
+            height: 300px;
+            padding: 30px;
+        }
+
+        .footer__div{
+            grid-area: footer;
+        }
+
+        img:hover{
+            transform: none;
+        }
 }
