@@ -413,7 +413,7 @@ img:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 29px 325px 1px 407px 1px 29px 304px 1px 196px;
+    grid-template-rows: 32px 70px 29px 325px 1px 230px 1px 29px 304px 1px 196px;
     grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
     grid-row-gap: 13px; }
   .mobileFirst h1 {
