@@ -427,7 +427,9 @@ img:hover {
   .mobileFirst .lineaUno {
     grid-area: linea1; }
   .mobileFirst .textoViaje {
-    grid-area: texto; }
+    grid-area: texto;
+    font-size: 25;
+    text-align: center; }
   .mobileFirst .lineaDos {
     grid-area: linea2; }
   .mobileFirst .tituloTabla {
