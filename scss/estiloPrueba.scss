@@ -558,7 +558,7 @@ img:hover{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 32px 70px 29px
-                            325px 1px 407px
+                            325px 1px 250px
                             1px 29px 304px
                             1px 196px;
 
@@ -573,7 +573,7 @@ img:hover{
                               "tabla"
                               "linea3"
                               "footer";
-     grid-row-gap: 13px;
+     grid-row-gap: 23px;
     }
     h1{
         grid-area: titulo1;
@@ -593,7 +593,8 @@ img:hover{
     .textoViaje{
         grid-area: texto;
         margin: auto;
-        font-size: 23px;
+        font-size: 25px;
+        
     }
     .lineaDos{
         grid-area: linea2;
@@ -614,12 +615,13 @@ img:hover{
 
 
 @media only screen and (min-width: 1280px) {
+	.mobileFirst {
 		.mobileFirst{
             margin: auto;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: 32px 70px 29px
-                                325px 1px 407px
+                                325px 1px 127px
                                 1px 29px 304px
                                 1px 196px;
     
@@ -653,8 +655,6 @@ img:hover{
         }
         .textoViaje{
             grid-area: texto;
-            margin: auto;
-            font-size: 23px;
         }
         .lineaDos{
             grid-area: linea2;
@@ -672,6 +672,7 @@ img:hover{
             grid-area: footer;
         }
     }
+	}
 	
 
     // responsive viaje 1 y 2

@@ -382,9 +382,9 @@ img:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 29px 325px 1px 407px 1px 29px 304px 1px 196px;
+    grid-template-rows: 32px 70px 29px 325px 1px 250px 1px 29px 304px 1px 196px;
     grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
-    grid-row-gap: 13px; }
+    grid-row-gap: 23px; }
   h1 {
     grid-area: titulo1; }
   .lista {
@@ -398,7 +398,7 @@ img:hover {
   .textoViaje {
     grid-area: texto;
     margin: auto;
-    font-size: 23px; }
+    font-size: 25px; }
   .lineaDos {
     grid-area: linea2; }
   .tituloTabla {
@@ -411,36 +411,34 @@ img:hover {
     grid-area: footer; } }
 
 @media only screen and (min-width: 1280px) {
-  .mobileFirst {
+  .mobileFirst .mobileFirst {
     margin: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 29px 325px 1px 407px 1px 29px 304px 1px 196px;
+    grid-template-rows: 32px 70px 29px 325px 1px 127px 1px 29px 304px 1px 196px;
     grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
     grid-row-gap: 13px; }
-  h1 {
+  .mobileFirst h1 {
     grid-area: titulo1; }
-  .lista {
+  .mobileFirst .lista {
     grid-area: nav; }
-  .tituloVideo {
+  .mobileFirst .tituloVideo {
     grid-area: subtitulo1; }
-  .videoItalia {
+  .mobileFirst .videoItalia {
     grid-area: video; }
-  .lineaUno {
+  .mobileFirst .lineaUno {
     grid-area: linea1; }
-  .textoViaje {
-    grid-area: texto;
-    margin: auto;
-    font-size: 23px; }
-  .lineaDos {
+  .mobileFirst .textoViaje {
+    grid-area: texto; }
+  .mobileFirst .lineaDos {
     grid-area: linea2; }
-  .tituloTabla {
+  .mobileFirst .tituloTabla {
     grid-area: subtitulo2; }
-  .tabla {
+  .mobileFirst .tabla {
     grid-area: tabla; }
-  .lineaTres {
+  .mobileFirst .lineaTres {
     grid-area: linea3; }
-  .footerPrincipal {
+  .mobileFirst .footerPrincipal {
     grid-area: footer; } }
 
 @media only screen and (max-width: 600px) {
