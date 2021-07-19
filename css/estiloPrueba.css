@@ -411,36 +411,36 @@ img:hover {
     grid-area: footer; } }
 
 @media only screen and (min-width: 1280px) {
-  .mobileFirst .mobileFirst {
+  .mobileFirst {
     margin: auto;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 32px 70px 29px 325px 1px 407px 1px 29px 304px 1px 196px;
     grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
     grid-row-gap: 13px; }
-  .mobileFirst h1 {
+  h1 {
     grid-area: titulo1; }
-  .mobileFirst .lista {
+  .lista {
     grid-area: nav; }
-  .mobileFirst .tituloVideo {
+  .tituloVideo {
     grid-area: subtitulo1; }
-  .mobileFirst .videoItalia {
+  .videoItalia {
     grid-area: video; }
-  .mobileFirst .lineaUno {
+  .lineaUno {
     grid-area: linea1; }
-  .mobileFirst .textoViaje {
+  .textoViaje {
     grid-area: texto;
     margin: auto;
     font-size: 23px; }
-  .mobileFirst .lineaDos {
+  .lineaDos {
     grid-area: linea2; }
-  .mobileFirst .tituloTabla {
+  .tituloTabla {
     grid-area: subtitulo2; }
-  .mobileFirst .tabla {
+  .tabla {
     grid-area: tabla; }
-  .mobileFirst .lineaTres {
+  .lineaTres {
     grid-area: linea3; }
-  .mobileFirst .footerPrincipal {
+  .footerPrincipal {
     grid-area: footer; } }
 
 @media only screen and (max-width: 600px) {
