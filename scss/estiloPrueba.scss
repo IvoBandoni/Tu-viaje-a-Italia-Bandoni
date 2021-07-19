@@ -592,6 +592,8 @@ img:hover{
     }
     .textoViaje{
         grid-area: texto;
+        margin: auto;
+        font-size: 23px;
     }
     .lineaDos{
         grid-area: linea2;
@@ -618,7 +620,7 @@ img:hover{
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: 32px 70px 29px
-                                325px 1px 230px
+                                325px 1px 407px
                                 1px 29px 304px
                                 1px 196px;
     
@@ -652,8 +654,8 @@ img:hover{
         }
         .textoViaje{
             grid-area: texto;
-            font-size: 25;
-            text-align: center;
+            margin: auto;
+            font-size: 23px;
         }
         .lineaDos{
             grid-area: linea2;
