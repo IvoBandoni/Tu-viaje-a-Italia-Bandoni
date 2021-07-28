@@ -4,7 +4,9 @@ h1 {
     font-size: 70px;
     font-weight: 800;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: gray;
+    
 }
 
 h2 {
@@ -137,7 +139,7 @@ button:hover {
 
 
 .body_div{
-    background-image: url("../fotos/florencia1.jpg");
+    background-image: url("../fotos/cinqueterre1.jpg");
     background-repeat: no-repeat;
 }
 
@@ -165,13 +167,38 @@ button:hover {
 }
 
 .formulario__body{
-    background-image: url(../fotos/cinqueterre1.jpg);
+    background-image: url(../fotos/florencia1.jpg);
     background-repeat: no-repeat;
 }
 
 p{
     font-size: 25px;
     word-spacing: 3px;
+}
+
+.container-tips{
+	margin: 20px;
+	text-align: center;
+}
+
+.tip .btn-shop {
+	color: #092327;
+}
+
+.tip i {
+	font-size: 40px;
+	color: #092327;
+	padding: 20px 0;
+}
+.btn-shop {
+	display: block;
+	border: 1px solid #092327;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	margin: 20px auto;
 }
 
 .formulario__text{
@@ -490,7 +517,7 @@ img:hover{
         grid-template-rows: 32px 70px 60px
                             325px 1px 407px
                             1px 29px 304px
-                            1px 370px;
+                            1px 600px 370px;
 
         grid-template-areas: "titulo1"
                               "nav"
@@ -502,6 +529,7 @@ img:hover{
                               "subtitulo2"
                               "tabla"
                               "linea3"
+                              "tips"
                               "footer";
      grid-row-gap: 25px;
     }
@@ -545,6 +573,9 @@ img:hover{
     .lineaTres{
         grid-area: linea3;
     }
+    .container-tips{
+        grid-area: tips;
+    }
     .footerPrincipal{
         grid-area: footer;
     }
@@ -560,7 +591,7 @@ img:hover{
         grid-template-rows: 32px 70px 29px
                             325px 1px 250px
                             1px 29px 304px
-                            1px 196px;
+                            1px 600px 196px;
 
         grid-template-areas: "titulo1"
                               "nav"
@@ -572,6 +603,7 @@ img:hover{
                               "subtitulo2"
                               "tabla"
                               "linea3"
+                              "tips"
                               "footer";
      grid-row-gap: 23px;
     }
@@ -608,6 +640,9 @@ img:hover{
     .lineaTres{
         grid-area: linea3;
     }
+    .container-tips{
+        grid-area: tips;
+    }
     .footerPrincipal{
         grid-area: footer;
     }
@@ -623,7 +658,7 @@ img:hover{
             grid-template-rows: 32px 70px 29px
                                 325px 1px 127px
                                 1px 29px 304px
-                                1px 196px;
+                                1px 550px 196px;
     
             grid-template-areas: "titulo1"
                                   "nav"
@@ -635,6 +670,7 @@ img:hover{
                                   "subtitulo2"
                                   "tabla"
                                   "linea3"
+                                  "tips"
                                   "footer";
          grid-row-gap: 13px;
         }
@@ -667,6 +703,9 @@ img:hover{
         }
         .lineaTres{
             grid-area: linea3;
+        }
+        .container-tips{
+            grid-area: tips;
         }
         .footerPrincipal{
             grid-area: footer;

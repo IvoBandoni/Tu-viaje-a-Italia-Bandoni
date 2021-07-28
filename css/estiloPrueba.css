@@ -3,7 +3,8 @@ h1 {
   font-size: 70px;
   font-weight: 800;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: gray; }
 
 h2 {
   font-weight: 600;
@@ -107,7 +108,7 @@ button:hover {
   cursor: pointer; }
 
 .body_div {
-  background-image: url("../fotos/florencia1.jpg");
+  background-image: url("../fotos/cinqueterre1.jpg");
   background-repeat: no-repeat; }
 
 .tituloContacto {
@@ -127,12 +128,34 @@ button:hover {
   line-height: 1.2; }
 
 .formulario__body {
-  background-image: url(../fotos/cinqueterre1.jpg);
+  background-image: url(../fotos/florencia1.jpg);
   background-repeat: no-repeat; }
 
 p {
   font-size: 25px;
   word-spacing: 3px; }
+
+.container-tips {
+  margin: 20px;
+  text-align: center; }
+
+.tip .btn-shop {
+  color: #092327; }
+
+.tip i {
+  font-size: 40px;
+  color: #092327;
+  padding: 20px 0; }
+
+.btn-shop {
+  display: block;
+  border: 1px solid #092327;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  margin: 20px auto; }
 
 .formulario__text {
   color: white; }
@@ -343,8 +366,8 @@ img:hover {
     display: grid;
     margin: auto;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 60px 325px 1px 407px 1px 29px 304px 1px 370px;
-    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
+    grid-template-rows: 32px 70px 60px 325px 1px 407px 1px 29px 304px 1px 600px 370px;
+    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "tips" "footer";
     grid-row-gap: 25px; }
   h1 {
     grid-area: titulo1;
@@ -374,6 +397,8 @@ img:hover {
     padding: 0px; }
   .lineaTres {
     grid-area: linea3; }
+  .container-tips {
+    grid-area: tips; }
   .footerPrincipal {
     grid-area: footer; } }
 
@@ -382,8 +407,8 @@ img:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 29px 325px 1px 250px 1px 29px 304px 1px 196px;
-    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
+    grid-template-rows: 32px 70px 29px 325px 1px 250px 1px 29px 304px 1px 600px 196px;
+    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "tips" "footer";
     grid-row-gap: 23px; }
   h1 {
     grid-area: titulo1; }
@@ -407,6 +432,8 @@ img:hover {
     grid-area: tabla; }
   .lineaTres {
     grid-area: linea3; }
+  .container-tips {
+    grid-area: tips; }
   .footerPrincipal {
     grid-area: footer; } }
 
@@ -415,8 +442,8 @@ img:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 32px 70px 29px 325px 1px 127px 1px 29px 304px 1px 196px;
-    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "footer";
+    grid-template-rows: 32px 70px 29px 325px 1px 127px 1px 29px 304px 1px 550px 196px;
+    grid-template-areas: "titulo1" "nav" "subtitulo1" "video" "linea1" "texto" "linea2" "subtitulo2" "tabla" "linea3" "tips" "footer";
     grid-row-gap: 13px; }
   .mobileFirst h1 {
     grid-area: titulo1; }
@@ -438,6 +465,8 @@ img:hover {
     grid-area: tabla; }
   .mobileFirst .lineaTres {
     grid-area: linea3; }
+  .mobileFirst .container-tips {
+    grid-area: tips; }
   .mobileFirst .footerPrincipal {
     grid-area: footer; } }
 
